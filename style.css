@@ -142,18 +142,8 @@ button#dice img {
 /* Desktop View */
 @media (min-width: 1440px) {
   .card {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translate(0, -50%);
-    margin-left: auto;
-    margin-right: auto;
     padding: 3em 1.5em 0;
     max-width: 28vw;
-    text-align: center;
-    color: var(--text-primary-500);
-    background-color: var(--bg-neutral-500);
-    border-radius: 5px;
+    border-radius: 8px;
   }
 }
