@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-advice-generator-with-loading-state-pure-html-css-js-6SNOxdcN2e](https://www.frontendmentor.io/solutions/responsive-advice-generator-with-loading-state-pure-html-css-js-6SNOxdcN2e)
 - Live Site URL: [https://joshuakme.github.io/fm-advice-generator-app-main/](https://joshuakme.github.io/fm-advice-generator-app-main/)
 
 ## My process
