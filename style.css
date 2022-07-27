@@ -142,7 +142,7 @@ button#dice img {
 /* Desktop View */
 @media (min-width: 1440px) {
   .card {
-    padding: 3em 1.5em 0;
+    padding: 3em 2em 0;
     max-width: 28vw;
     border-radius: 8px;
   }
