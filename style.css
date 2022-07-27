@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --bg-primary-500: hsl(193, 38%, 86%);
+  --bg-secondary-500: hsl(150, 100%, 66%);
+
+  --bg-neutral-900: hsl(218, 23%, 16%);
+  --bg-neutral-500: hsl(217, 19%, 24%);
+  --bg-neutral-100: hsl(217, 19%, 38%);
+
+  --text-primary-500: hsl(193, 38%, 86%);
+  --text-secondary-500: hsl(150, 100%, 66%);
+
+  --text-neutral-900: hsl(218, 23%, 16%);
+  --text-neutral-500: hsl(217, 19%, 24%);
+  --text-neutral-100: hsl(217, 19%, 38%);
+
+  --ff-primary: "Manrope", sans-serif;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%; /* 16px */
+}
+
+body {
+  background-color: var(--bg-neutral-900);
+  font-family: var(--ff-primary);
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 1em 0;
+  max-width: 90vw;
+  text-align: center;
+  color: var(--text-primary-500);
+  background-color: var(--bg-neutral-500);
+  border-radius: 5px;
+}
+
+.card h1 {
+  margin-bottom: 1.8em;
+
+  font-size: 0.7rem;
+  color: var(--text-secondary-500);
+  letter-spacing: 0.4em;
+}
+
+.card q#quoteTxt {
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+/* Loading Spinner */
+.lds-ring {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Img Divider */
+.card img.img-divider {
+  width: 100%;
+}
+
+button#dice {
+  font-size: 1rem;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid var(--bg-secondary-500);
+  background-color: var(--bg-secondary-500);
+  border-radius: 50%;
+  transform: translateY(50%);
+  cursor: pointer;
+
+  -webkit-transition: box-shadow 200ms ease-in-out;
+  -moz-transition: box-shadow 200ms ease-in-out;
+  -o-transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+button#dice:hover {
+  box-shadow: 0 0 1.5em var(--bg-secondary-500);
+}
+
+button#dice img {
+  background-color: transparent;
+}
+
+/* Attribution Section */
+.attribution {
+  margin-top: 1em;
+  font-size: 11px;
+  text-align: center;
+  color: var(--text-primary-500);
+}
+.attribution a {
+  color: var(--text-secondary-500);
+}
+
+/* Desktop View */
+@media (min-width: 1440px) {
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em 1.5em 0;
+    max-width: 28vw;
+    text-align: center;
+    color: var(--text-primary-500);
+    background-color: var(--bg-neutral-500);
+    border-radius: 5px;
+  }
+}
