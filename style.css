@@ -146,4 +146,8 @@ button#dice img {
     max-width: 28vw;
     border-radius: 8px;
   }
+
+  .card q#quoteTxt {
+    font-size: 1.75rem;
+  }
 }
